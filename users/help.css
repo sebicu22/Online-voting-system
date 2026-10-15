@@ -1,0 +1,150 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f9fb;
+  margin: 0;
+  color: #222;
+}
+
+main.help-container { 
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 2px 16px rgba(25, 118, 210, 0.08);
+}
+        
+.help-content ul {
+  line-height: 1.7;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.help-content li {
+  margin-bottom: 0.7rem;
+  line-height: 1.6;
+}
+.help-content section {
+  margin-bottom: 2.5rem;
+}
+.help-content h1,
+.help-content h2 {
+  color: #1976d2;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+.help-content h1 {
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+}
+.help-content h2 {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  margin-bottom: 0.7rem;
+  border-left: 4px solid #2a5d8f;
+  padding-left: 0.5rem;
+}
+                
+.success {
+  color: #388e3c;
+  background: #e8f5e9;
+  border: 1px solid #c8e6c9;
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+        
+.error {
+  color: #c62828;
+  background: #ffebee;
+  border: 1px solid #ffcdd2;
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+        
+form.helf {
+  margin: 1.5rem 0;
+  padding: 1.2rem 1.5rem;
+  background: #f5f7fa;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(25, 118, 210, 0.05);
+  max-width: 500px;
+  margin-bottom: 1.5rem;
+}
+        
+form.helf label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #2a5d8f;
+}
+        
+form.helf input[type="text"], form.helf textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
+  border: 1px solid #b0bec5;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #fff;
+  box-sizing: border-box;
+}
+        
+form.helf input[type="text"]:focus, form.helf textarea:focus {
+  border-color: #2a5d8f;
+  outline: none;
+}
+        
+form.helf button[type="submit"] {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+        
+form.helf button[type="submit"]:hover {
+  background: #1256a3;
+}
+        
+.contact-info {
+  margin-top: 2rem;
+  font-size: 1rem;
+  background: #f1f8ff;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #1976d2;
+}
+        
+.contact-info a {
+  color: #2a5d8f;
+  text-decoration: none;
+}
+        
+.contact-info a:hover {
+  text-decoration: underline;
+}
+        
+footer[role="contentinfo"] {
+  text-align: center;
+  color: #888;
+  font-size: 0.95rem;
+  margin-top: 2.5rem;
+  padding-bottom: 1.5rem;
+  background: none;
+  border: none;
+}
+        
+@media (max-width: 600px) {
+  main.help-container {
+    padding: 1rem;
+    border-radius: 0;
+  }
+  form.helf {
+    padding: 1rem 0.3rem;
+  }
+}

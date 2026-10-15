@@ -1,0 +1,132 @@
+body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+
+        h1.res {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .content-result {
+            background: #fff;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+             width: 100%;           /* fill container width */
+             max-width: 800px;      /* limit max width */
+             margin-left: auto;
+             margin-right: auto;
+        }
+
+        .content-result h2 {
+            margin-top: 0;
+            color: #007bff;
+        }
+
+        .poll-desc {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        .result-summary {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #444;
+        }
+
+        .result-date {
+            font-style: italic;
+            font-size: 13px;
+            color: #777;
+        }
+
+        .result-answers {
+            margin-top: 20px;
+        }
+
+        .answer-title {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .votes {
+            color: #555;
+            font-size: 13px;
+        }
+
+        .result-bar-container {
+            background: #e9ecef;
+            border-radius: 6px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .result-bar {
+            background: linear-gradient(to right, #007bff, #00c3ff);
+            color: #fff;
+            text-align: right;
+            padding: 5px 10px;
+            font-size: 13px;
+            font-weight: bold;
+            height: 30px;
+            line-height: 20px;
+        }
+
+        .no-votes {
+            margin-top: 20px;
+            padding: 10px;
+            background: #fff3f3;
+            color: #c00;
+            border-left: 5px solid #c00;
+        }
+
+        @media (max-width: 600px) {
+            .content-result {
+                padding: 15px;
+            }
+
+            .result-bar {
+                font-size: 12px;
+                padding: 4px 8px;
+            }
+        }
+
+.print-btn {
+    margin: 16px 0 24px 0;
+    padding: 8px 18px;
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 200px;
+}
+.print-btn:hover {
+    background: #1256a3;
+}
+@media print {
+    .print-btn,
+    form, /* hides the election dropdown */
+    .side-bar, /* if present */
+    .side-list,
+    .res,      /* hides the main results header */
+    header {   /* hides any <header> tag if present */
+        display: none !important;
+    }
+    body {
+        background: #fff !important;
+    }
+    .content-result {
+        page-break-inside: avoid;
+    }
+}

@@ -1,0 +1,173 @@
+body {
+            font-family: Arial, sans-serif;
+            background: #f4f7f8;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="datetime-local"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        textarea {
+            min-height: 80px;
+        }
+        .btn {
+            margin-top: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+            width: 100%;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .error {
+            background: #f8d7da;
+            color: #842029;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        .success {
+            background: #d1e7dd;
+            color: #0f5132;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        a.back-link {
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        a.back-link:hover {
+            text-decoration: underline;
+        }
+
+    .create-election-btn {
+      background: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+    .create-election-btn:hover {
+      background: #0056b3;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.4);
+    }
+    .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto;
+      padding: 0;
+      border: 1px solid #888;
+      width: 80vw;
+      max-width: 700px;
+      border-radius: 8px;
+      position: relative;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    .close {
+      color: #aaa;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 10;
+    }
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    /* Responsive styles */
+@media (max-width: 700px) {
+  .container {
+    max-width: 98vw;
+    padding: 16px 4vw;
+  }
+  .modal-content {
+    width: 96vw;
+    max-width: 99vw;
+    margin: 10vw auto;
+    padding: 0;
+  }
+  .btn,
+  .create-election-btn {
+    font-size: 1em;
+    padding: 10px 0;
+  }
+  h1 {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 10px 2vw;
+    border-radius: 4px;
+  }
+  .modal-content {
+    width: 99vw;
+    max-width: 99vw;
+    margin: 12vw auto;
+    border-radius: 4px;
+    padding: 0;
+  }
+  input[type="text"],
+  input[type="datetime-local"],
+  textarea {
+    font-size: 1em;
+    padding: 8px;
+  }
+  .btn,
+  .create-election-btn {
+    font-size: 0.97em;
+    padding: 8px 0;
+  }
+  h1 {
+    font-size: 1em;
+  }
+}

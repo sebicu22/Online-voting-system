@@ -1,0 +1,160 @@
+body { 
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f2f2f2;
+    padding: 30px;
+    color: #333;
+}
+
+.content-tech {
+    position: relative;
+    height: 100%;
+    /* padding: 30px; */
+    overflow-y: auto;
+    flex-grow: 1;
+    background-color: #f9fbfc;
+    margin-bottom: 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-tech h1 {
+  display: flex; 
+  align-items: center;
+    text-align: center;
+    color: #0056b3;
+    margin-bottom: 30px; 
+}
+  
+.tick { 
+     width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+  
+.tick th, td { 
+    padding: 12px 15px; 
+    border-bottom: 1px solid #ddd; 
+    text-align: left; 
+}
+ 
+.tick th { 
+    background-color: #007BFF; 
+    color: white; 
+}
+
+.tick td {
+    vertical-align: top;
+}
+
+  
+.tick tr:hover { 
+    background-color: #f1f1f1; 
+}
+  
+form { 
+    
+    display: flex;
+    flex-direction: column; 
+}
+  
+select, button {
+    padding: 6px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+  
+button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+  
+.status-open { 
+    color: #dc3545; 
+    font-weight: bold; 
+}
+  
+.status-in_progress { 
+    color: #ffc107; 
+    font-weight: bold; 
+}
+  
+.status-resolved { 
+    color: #28a745; 
+    font-weight: bold; 
+}
+
+.success {
+    color: green;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .content-tech {
+    padding: 16px 2vw;
+  }
+  .tick {
+    font-size: 0.97em;
+  }
+  .tick th, .tick td {
+    padding: 10px 8px;
+  }
+}
+
+@media (max-width: 700px) {
+  .content-tech {
+    padding: 8px 1vw;
+  }
+  .tick {
+    font-size: 0.95em;
+    min-width: 0;
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+  }
+  .tick th, .tick td {
+    padding: 8px 4px;
+    white-space: nowrap;
+  }
+  .content-tech h1 {
+    font-size: 1.2em;
+    margin-bottom: 18px;
+  }
+  form {
+    gap: 8px;
+  }
+  select, button {
+    font-size: 0.97em;
+    padding: 6px 4px;
+  }
+}
+
+@media (max-width: 500px) {
+  .content-tech {
+    padding: 4px 0.5vw;
+  }
+  .tick {
+    font-size: 0.92em;
+  }
+  .tick th, .tick td {
+    padding: 6px 2px;
+  }
+  h1 {
+    font-size: 1em;
+    margin-bottom: 12px;
+  }
+  button, select {
+    font-size: 0.95em;
+    padding: 5px 2px;
+  }
+}

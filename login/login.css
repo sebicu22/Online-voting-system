@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana,sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #c7c3c3;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img{
+    width: 50%; 
+    height: 100%;
+}
+
+.log{
+    /* border: rgb(212, 71, 71) solid 2px; */
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    width: 800px;
+    height: 450px;
+    margin: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+ form{
+    width: 50%;
+    height: 100%;
+    /* border: black solid 2px; */
+    align-items: center;
+    background-color: rgb(223, 216, 216);
+ }
+ h1{
+    text-align: center;
+    font-size: 60px;
+ }
+ hr{
+    width: 80%;
+    justify-self: center;
+    margin: 10px;
+    margin-bottom: 30px;
+ }
+.in{
+    justify-self: center;
+}
+input{
+    width: 300px;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    border-radius: 30px;
+    border: gray solid 1px;
+    
+ }
+ .fot{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 50px;
+    align-items: center;
+ }
+
+ .fot a{
+    text-align: center;
+    font-size: 18px;
+    
+}
+.fot a:hover{
+    color: #3498db;
+}
+ button{
+    width: 100px;
+    height: 50px;
+    background-color: #3498db;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    border: 0px;
+ }
+button:hover{
+    background-color: #3498dba9;
+}
+
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .log {
+    width: 98vw;
+    height: auto;
+    margin: 30px 0;
+    flex-direction: column;
+    min-width: 0;
+  }
+  form {
+    width: 98vw;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+  }
+  img {
+    width: 98vw;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  hr {
+    width: 90vw;
+    max-width: 350px;
+  }
+  input {
+    width: 90vw;
+    max-width: 300px;
+    height: 44px;
+    font-size: 1em;
+  }
+  .fot {
+    margin: 10px 10vw;
+    flex-direction: column;
+    gap: 8px;
+  }
+  button {
+    width: 90vw;
+    max-width: 120px;
+    height: 44px;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 600px) {
+  .log {
+    width: 100vw;
+    height: 80vh;
+    min-width: 0;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  form {
+    width: 80vw;
+    max-width: 98vw;
+    padding: 10px 0;
+    border-radius: 0;
+  }
+  img {
+    width: 80vw;
+    max-width: 98vw;
+    padding: 0;
+    border-radius: 0;
+  }
+  h1 {
+    font-size: 1.3em;
+  }
+  hr {
+    width: 95vw;
+    max-width: 300px;
+  }
+  input {
+    width: 95vw;
+    max-width: 260px;
+    height: 38px;
+    font-size: 0.97em;
+  }
+  .fot {
+    margin: 10px 2vw;
+    flex-direction: column;
+    gap: 6px;
+  }
+  button {
+    width: 95vw;
+    max-width: 100px;
+    height: 38px;
+    font-size: 0.97em;
+  }
+  
+}
+
+
+

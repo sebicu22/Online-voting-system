@@ -1,0 +1,123 @@
+/* Basic reset */
+* {
+    box-sizing: border-box;
+}
+
+/* Body styling when modal is standalone */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Modal container */
+.edit-user-modal {
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    width: 100%;
+    max-width: 420px;
+    box-sizing: border-box;
+}
+
+/* Form labels and inputs */
+.edit-user-modal label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #333;
+    font-size: 1rem;
+}
+
+.edit-user-modal input[type="text"],
+.edit-user-modal input[type="email"],
+.edit-user-modal input[type="password"],
+.edit-user-modal input[type="file"] {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 6px;
+    border: 1.8px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.edit-user-modal input[type="text"]:focus,
+.edit-user-modal input[type="email"]:focus,
+.edit-user-modal input[type="password"]:focus,
+.edit-user-modal input[type="file"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Image preview */
+.edit-user-modal img {
+    display: block;
+    margin: 8px 0 12px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Submit button */
+.edit-user-modal button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 12px 0;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.edit-user-modal button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+    .edit-user-modal {
+        max-width: 98vw;
+        padding: 18px 8px;
+    }
+    .edit-user-modal label {
+        font-size: 0.98rem;
+        margin-bottom: 10px;
+    }
+    .edit-user-modal input[type="text"],
+    .edit-user-modal input[type="email"],
+    .edit-user-modal input[type="password"],
+    .edit-user-modal input[type="file"] {
+        font-size: 0.97rem;
+        padding: 7px 7px;
+    }
+    .edit-user-modal button[type="submit"] {
+        font-size: 1rem;
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .edit-user-modal {
+        padding: 12px 2vw;
+        max-width: 100vw;
+        border-radius: 6px;
+    }
+    .edit-user-modal label {
+        font-size: 0.95rem;
+    }
+    .edit-user-modal button[type="submit"] {
+        font-size: 0.97rem;
+        padding: 8px 0;
+        border-radius: 6px;
+    }
+}

@@ -1,0 +1,37 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Join Us Section */
+.join-us-section {
+    background-color: #f8f9fa;
+}
+
+.join-us-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.join-us-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.join-us-form input, .join-us-form textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.join-us-form input:focus, .join-us-form textarea:focus {
+    border-color: #007bff;
+}
+
+.join-us-form button {
+    padding: 0.75rem 2rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+}

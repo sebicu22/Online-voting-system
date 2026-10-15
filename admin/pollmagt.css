@@ -1,0 +1,279 @@
+.collapse-toggle {
+    width: 100%;
+    text-align: left;
+    background: #4d4141;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0.7em 1em;
+    border-radius: 6px;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+    transition: background 0.2s;
+}
+.collapse-toggle:hover {
+    background: #e0e0e0;
+}
+.toggle-arrow {
+    font-size: 1.2em;
+    transition: transform 0.2s;
+}
+.election-content {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 1em 1.5em;
+    margin-bottom: 1.5em;
+    background: #fafbfc;
+}
+
+.content-pollmagt {
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2em 2.5em;
+    border-radius: 10px;
+    box-shadow: 0 0 18px #d0d0d0;
+    font-family: Arial, sans-serif;
+    
+}
+
+.content-pollmagt h1 {
+    text-align: center;
+    margin-bottom: 1.2em;
+}
+
+.content-pollmagt h2 {
+    text-align: center;
+    margin-bottom: 1.2em;
+}
+
+
+.poll-list {
+    margin-bottom: 2em;
+}
+
+.poll-item {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 1.2em;
+    margin-bottom: 1.2em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.poll-item:last-child {
+    border-bottom: none;
+}
+
+.poll-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.poll-status {
+    font-size: 0.98em;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.poll-actions {
+    margin-top: 0.5em;
+    display: flex;
+    gap: 0.7em;
+}
+
+.poll-actions .btn {
+    padding: 7px 16px;
+    border: none;
+    border-radius: 4px;
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-size: 1em;
+}
+
+.poll-actions .btn.delete {
+    background: #dc3545;
+}
+
+.poll-actions .btn.edit {
+    background: #28a745;
+}
+
+.poll-actions .btn:hover {
+    opacity: 0.85;
+}
+
+.add-poll-btn {
+    display: block;
+    margin: 0 auto 2em auto;
+    padding: 12px 28px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.add-poll-btn:hover {
+    background: #0056b3;
+}
+
+.poll-form {
+    background: #f8f9fa;
+    padding: 1.5em;
+    border-radius: 8px;
+    margin-bottom: 2em;
+    box-shadow: 0 0 8px #e0e0e0;
+}
+
+.poll-form label {
+    font-weight: bold;
+    margin-bottom: 0.3em;
+    display: block;
+}
+
+.poll-form input[type="text"],
+.poll-form textarea,
+.poll-form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.poll-form button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.poll-form button:hover {
+    background: #0056b3;
+}
+
+.success, .error {
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 1em;
+    font-size: 1em;
+}
+
+.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Candidate profile card styles for pollmagt.php */
+
+.candidates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 1.2rem 0 0 0;
+}
+
+.candidates li {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(25, 118, 210, 0.07);
+  padding: 1.2rem 1.2rem 0.8rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 170px;
+  min-height: 210px;
+  transition: box-shadow 0.2s;
+  position: relative;
+}
+
+.candidates li:hover {
+  box-shadow: 0 6px 24px rgba(25, 118, 210, 0.16);
+}
+
+.candidates li img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #1976d2;
+  background: #f3f6fa;
+  margin-bottom: 0.8rem;
+  box-shadow: 0 1px 6px rgba(25, 118, 210, 0.10);
+}
+
+.candidates li div {
+  font-weight: 600;
+  color: #222;
+  font-size: 1.08rem;
+  text-align: center;
+  margin-top: 0.2rem;
+  word-break: break-word;
+}
+
+.candidates button[type="submit"] {
+  background: #e53935;
+  color: #fff;
+  border: none;
+  border-radius: 22px;
+  padding: 0.5em 1.4em;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5em;
+  box-shadow: 0 2px 8px rgba(229, 57, 53, 0.08);
+  transition: background 0.18s, box-shadow 0.18s;
+}
+
+.candidates button[type="submit"]:hover {
+  background: #b71c1c;
+  box-shadow: 0 4px 16px rgba(229, 57, 53, 0.18);
+}
+
+@media (max-width: 700px) {
+  .candidates {
+    gap: 0.7rem;
+  }
+  .candidates li {
+    width: 46vw;
+    min-width: 120px;
+    padding: 0.7rem 0.5rem 0.5rem 0.5rem;
+  }
+  .candidates li img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+    .content-pollmagt {
+        padding: 1em 0.5em;
+    }
+    .poll-form {
+        padding: 1em;
+    }
+}
